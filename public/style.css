@@ -1,0 +1,115 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    width: auto;
+   
+    top: 0;  /* Stick to the top */
+    z-index: 1000;  /* Ensure it stays above other content */
+}
+
+header h1 {
+    margin: 0;
+    animation: fadeInDown 1s;
+}
+
+main {
+    padding: 2em;
+    width: 90%;
+    max-width: 800px;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;  /* Add margin to avoid overlap with header */
+    margin-bottom: 80px; /* Avoid overlap with footer */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.fade-in {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
