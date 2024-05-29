@@ -8,7 +8,7 @@
 </head>
 <body> 
     
-    <div id="app">
+   
       
     <header>
             <h1>The Mystery Case</h1>
@@ -20,7 +20,21 @@
             <p>&copy; 2024 Mystery Web App</p>
             <p>Developed by shreyansh using GPT</p>
         </footer>
+        <div id="rules-modal" class="modal">
+        <div class="modal-content">
+            <h2>Rules</h2>
+            <p>Welcome to The Mystery Case! Follow these rules to solve the mystery:</p>
+            <ul>
+                <li>Pay close attention to all clues.</li>
+                <li>Solve the puzzles to progress.</li>
+                <li>Some puzzles require basic math skills.</li>
+                <li>Think logically and don't rush.</li>
+            </ul>
+            <button id="close-rules-btn">Got it!</button>
+        </div>
     </div>
+    <div id="modal-overlay" class="overlay"></div>
+    
     <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 
