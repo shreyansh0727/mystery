@@ -55,7 +55,7 @@ function checkWindow() {
     const mainContent = document.getElementById("main-content");
 
     mainContent.innerHTML = `
-        <p class="fade-in">You find a hidden note near the window with a clue: "let 7>x>=9. now x(6x-9x)=?"</p>
+        <p class="fade-in">You find a hidden note near the window with a clue: x is more than 7 and less than 9 "now x(6x+9x)=?"</p>
         <input type="number" id="window-answer" placeholder="Your answer">
         <button id="submit-window-answer">Submit</button>
         <button id="back">Go Back</button>
@@ -109,7 +109,7 @@ function reachFinalStage() {
 
     document.getElementById("submit-final-answer").addEventListener("click", () => {
         const answer = parseInt(document.getElementById("final-answer").value);
-        if (answer === 40182) {
+        if (answer === 40272) {
             solveMystery();
         } else {
             alert("Incorrect! Try again.");
@@ -122,6 +122,8 @@ function solveMystery() {
 
     mainContent.innerHTML = `
         <p class="fade-in">Congratulations! You have solved the mystery and escaped the haunted mansion!</p>
+        <p> Now follow me on Instagram forr more such content</p>
+        <a href="https://instagram.com/shreyansh_m7">@instagram</a>
         <button id="restart">Start Over</button>
     `;
 
