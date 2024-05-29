@@ -1,6 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
     const mainContent = document.getElementById("main-content");
+    const rulesModal = document.getElementById("rules-modal");
+    const modalOverlay = document.getElementById("modal-overlay");
+    const closeRulesBtn = document.getElementById("close-rules-btn");
 
+
+    
+    rulesModal.style.display = "block";
+    modalOverlay.style.display = "block";
+    
+ closeRulesBtn.addEventListener("click", () => {
+        rulesModal.style.display = "none";
+        modalOverlay.style.display = "none";
+    });
     // Initial story setup
     mainContent.innerHTML = `
         <p class="fade-in">You receive a mysterious letter inviting you to investigate a haunted mansion...</p>
