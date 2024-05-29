@@ -31,7 +31,7 @@ function checkDoor() {
     const mainContent = document.getElementById("main-content");
 
     mainContent.innerHTML = `
-        <p class="fade-in">The door is locked. A puzzle on the door says: "You answer is ****"</p>
+        <p class="fade-in">The door is locked. A puzzle on the door says: "You answer is x = "Oxygen"</p>
         <input type="number" id="door-answer" placeholder="Your answer">
         <button id="submit-door-answer">Submit</button>
         <button id="back">Go Back</button>
@@ -41,7 +41,7 @@ function checkDoor() {
 
     document.getElementById("submit-door-answer").addEventListener("click", () => {
         const answer = parseInt(document.getElementById("door-answer").value);
-        if (answer === 8888) {
+        if (answer === 8) {
             proceedToNextStage();
         } else {
             alert("Incorrect! Try again.");
