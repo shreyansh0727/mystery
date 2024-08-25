@@ -100,7 +100,7 @@ function proceedToNextStage() {
 
     document.getElementById("submit-hallway-answer").addEventListener("click", () => {
         const answer = parseFloat(document.getElementById("hallway-answer").value);
-        if (answer === 111.08) {
+        if (answer === 111.07) {
             reachFinalStage();
         } else {
             alert("Incorrect! Try again.");
